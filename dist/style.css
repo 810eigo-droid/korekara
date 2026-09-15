@@ -199,3 +199,4 @@ html{scroll-padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
  .benefits h3{font-size:clamp(21px,5.7vw,24px)}
  .steps h3{font-size:clamp(20px,5.5vw,22px)}
 }
+@media(max-width:640px){.draft .ribbon-divider{display:none}.draft .ribbon-message{display:block}.draft{line-height:1.65;padding:6px 12px}}
