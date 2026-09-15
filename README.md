@@ -1,27 +1,35 @@
 # これからの私の生き方 — 独立LP
 
-LP本体：dist/index.html、スタイル：dist/style.css。
+## 正式な保存先
+https://github.com/810eigo-droid/korekara
 
-## FV画像
-ユーザー提供の images/fv-pc.webp と images/fv-sp.webp を使用。公開用コピーは dist/images/ に配置。640px以下でスマホ版、それ以上でPC版を表示します。画像全体を縦横比どおり表示し、文字をトリミングしません。
+画像の追加先：images/
+公開用画像：dist/images/
+LP本体：dist/index.html
+デザイン：dist/style.css
+アニメーション：dist/ambient.js、dist/reveal.js
+先頭へ戻るボタン：dist/top.js
 
-見出しは画像内に含まれるため、HTMLの重複表示を削除しました。h1内の画像代替テキストに対象・サービス・見出しを含めています。画像内の「ご案内を見る」にページ内リンクを重ね、下部にも通常の案内リンクを配置しています。
+## 公開サイト
+https://korekara-counseling.ricky-o.chatgpt.site/
 
-参考デザインの淡いピンク、曲線的な写真枠、ゆったりした余白を反映。本文はPC18px・スマホ17pxです。若いモデルは使用していません。写真はサービスのイメージであり、実際の担当者・利用者としては表示していません。
+ユーザーの依頼により一般公開済み。GitHubの保存先変更で公開URLは変わりません。
+公開はSitesを使用し、既存の .openai/hosting.json の project_id を維持します。
+GitHubへ画像を追加しただけでは自動公開されません。HTMLへの組み込みとSitesへの公開が必要です。
 
 ## 申込み
-独立LPからマイスピーの登録フォームへリンクする構成。LP作成ブロックは使用しません。リンクは後日支給予定で、現在は申込みボタンを無効化しています。詳細は MYASP-HANDOFF.md。
+マイスピーのLP作成ブロックは使いません。申込み・リスト管理のみマイスピーを使用します。
+申込みURLは未提供です。フローティングバーは現在ページ内の #session へ移動し、
+料金カードの申込みボタンは受付準備中です。URL受領後にリンクを接続します。
 
-## 原稿
-お悩み6項目・変化8項目・4つのステップ・説明文は、原稿①〜⑧が未提供のため仮原稿。お客様の声・担当者名・資格・プロフィール・本人写真・期間・税込表記・支払い方法・運営者情報は未提供または未確定です。
+## 原稿と画像
+設計書：DESIGN-FRAMEWORK.md
+感想4件は架空の仮原稿で、各カードに SAMPLE／仮原稿を明記しています。
+プロフィール・正式原稿・申込み条件など、未確定箇所は確認後に更新します。
+ユーザー提供のPC/SP画像は640pxで切り替え、基本は画像全体を表示します。
+object5-sp.webp は images/ に保存済みですが、現在の公開LPへの組み込みは未実施です。
 
-## 確認用公開
-https://korekara-counseling.ricky-o.chatgpt.site
-現在は本人限定です。顧客向けの公開範囲は確認待ちです。
-
-## 参考
-https://github.com/810eigo-droid/bunjino-jyomon/blob/claude/bunnji-jomon-lp-design-rj8isd/korekara-counseling/DESIGN-FRAMEWORK.md
-
-## 4つの変化のデザイン
-参考画像に合わせてスマホは縦1列、800px以上のPCは2列×2段のカード。ピンク番号・区切り線・線画を使用。本文はスマホ17pxを維持。装飾画像は内蔵ImageGenで生成した dist/images/benefit-icons.webp。原本は ../output/imagegen/benefit-icons.png。プロンプト：four equally spaced feminine thin plum line art icons on ivory: woman profile with pink heart, signpost, intertwined hearts, pink leaf sprout; no text; consistent scale.
-
+## リポジトリ移行
+2026-09-15に bunjino-jyomon の codex/korekara-counseling-lp ブランチから、
+korekara-counseling フォルダの内容をこのリポジトリ直下へ移行しました。
+以後はこのリポジトリで管理します。
