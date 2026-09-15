@@ -185,3 +185,17 @@ html{scroll-padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
 .back-to-top[hidden]{display:none}
 .back-to-top:hover{background:#f7d6e6}
 @media(max-width:640px){.back-to-top{right:10px;bottom:calc(54px + env(safe-area-inset-bottom,0px))}}
+/* Deliberate mobile phrase breaks instead of isolated final characters. */
+@media(max-width:640px){
+ .mobile-line{display:block}
+ .desktop-break,.legacy-break{display:none}
+ .hero-after .service-label{font-size:14px;letter-spacing:.025em;line-height:1.8}
+ .hero-after .lead{font-size:clamp(20px,5.4vw,23px);letter-spacing:.015em;line-height:1.85}
+ .hero-after .lead .mobile-line:nth-of-type(3){margin-top:.5em}
+ .hero-small{line-height:1.8}
+ .closing-with-tea .closing{font-size:clamp(21px,5.6vw,24px)}
+ h2,h3,.voice-end,.profile-pending{text-wrap:pretty;line-break:strict}
+ .about-heading h2{font-size:clamp(24px,6.5vw,28px)}
+ .benefits h3{font-size:clamp(21px,5.7vw,24px)}
+ .steps h3{font-size:clamp(20px,5.5vw,22px)}
+}
