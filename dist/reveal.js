@@ -5,6 +5,7 @@
   const active = new Set();
   const stopped = () => reduced.matches || document.documentElement.dataset.motion === 'paused';
   const frames = {
+    marker: [{backgroundSize: '0% 100%'}, {backgroundSize: '100% 100%'}],
     rise: [{opacity: 0, translate: '0 22px'}, {opacity: 1, translate: '0 0'}],
     left: [{opacity: 0, translate: '-18px 0'}, {opacity: 1, translate: '0 0'}],
     right: [{opacity: 0, translate: '18px 0'}, {opacity: 1, translate: '0 0'}],
@@ -12,6 +13,7 @@
     wipe: [{opacity: .2, clipPath: 'inset(0 12% 0 0 round 12px)'}, {opacity: 1, clipPath: 'inset(0 0 0 0 round 12px)'}]
   };
   const targets = new Map();
+  document.querySelectorAll('.key-marker').forEach(el => targets.set(el, 'marker'));
   document.querySelectorAll('h2').forEach((el, i) => targets.set(el, i % 2 ? 'right' : 'left'));
   document.querySelectorAll('h3').forEach(el => targets.set(el, 'rise'));
   document.querySelectorAll('.worries-banner picture,.profile-banner picture,.invitation-banner img,.farewell-banner picture').forEach(el => targets.set(el, 'rise'));

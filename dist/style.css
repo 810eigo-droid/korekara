@@ -210,3 +210,11 @@ html{scroll-padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
 
 .ribbon-wordmark{font-family:'Great Vibes','Monotype Corsiva','URW Chancery L',cursive;font-style:normal;font-size:36px;font-weight:400;letter-spacing:.015em;line-height:1.2}
 @media(max-width:640px){.ribbon-wordmark{font-size:30px}.draft.brand-ribbon{gap:12px;padding:8px 12px}.brand-ribbon:before,.brand-ribbon:after{width:24px}}
+/* Editorial emphasis: readable text first, soft one-time marker underneath. */
+.key-marker{color:#923754;font-weight:600;background-color:transparent;background-image:linear-gradient(transparent 62%,#ee9cbe70 62%,#ee9cbe70 94%,transparent 94%);background-repeat:no-repeat;background-size:100% 100%;padding:0 .06em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.key-phrase{color:#a82360;font-weight:600}
+h3 .key-phrase{font-weight:inherit;color:inherit}
+.lead .key-marker{font-weight:500;padding:0}
+.price-card dd .key-phrase{font-size:1.06em}
+.checklist .key-phrase{color:#98425f}
+@media(max-width:640px){.key-marker{padding:0}.benefits h3 .key-phrase{font-weight:600}}
