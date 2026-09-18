@@ -10,6 +10,10 @@ LP本体：dist/index.html
 アニメーション：dist/ambient.js、dist/reveal.js
 先頭へ戻るボタン：dist/top.js
 
+## バージョン管理
+V1（2026-09-18の修正依頼前）は archive/v1/ と GitHub の v1 ブランチに保存しています。
+以後の修正は dist/ を上書きして進めます。
+
 ## 公開サイト
 https://korekara-counseling.ricky-o.chatgpt.site/
 
