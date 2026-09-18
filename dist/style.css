@@ -118,8 +118,8 @@ h4{font-size:17px;line-height:1.6;margin:0 0 8px}
 
 /* 06 セッション詳細・当日の流れ・特典 */
 .offer{background:var(--sand);overflow:hidden}
-.offer-bg{position:absolute;inset:0;pointer-events:none;opacity:.32}
-.offer-bg img{width:140%;max-width:none;position:absolute;left:-20%;top:-10%;-webkit-mask-image:linear-gradient(to bottom,#000 0,transparent 70%);mask-image:linear-gradient(to bottom,#000 0,transparent 70%)}
+.offer-bg{position:absolute;inset:0;pointer-events:none;opacity:.34}
+.offer-bg img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:50% 35%;-webkit-mask-image:linear-gradient(to bottom,#000 0,rgba(0,0,0,.6) 40%,transparent 78%);mask-image:linear-gradient(to bottom,#000 0,rgba(0,0,0,.6) 40%,transparent 78%)}
 .offer .wrap{position:relative}
 .offer-card{background:rgba(255,255,255,.92);border:1px solid var(--accent);border-radius:24px;padding:28px 22px;box-shadow:var(--shadow)}
 .offer-label{display:table;margin:0 auto 10px;padding:4px 16px;border-radius:999px;background:var(--blush);color:var(--rose);font-size:12px;letter-spacing:.1em}
@@ -166,8 +166,8 @@ h4{font-size:17px;line-height:1.6;margin:0 0 8px}
 
 /* 07 申込ステップ */
 .apply{background:#fff;overflow:hidden}
-.apply-bg{position:absolute;inset:0;pointer-events:none;opacity:.22}
-.apply-bg img{width:130%;max-width:none;position:absolute;right:-15%;bottom:-10%;-webkit-mask-image:linear-gradient(to top,#000 0,transparent 75%);mask-image:linear-gradient(to top,#000 0,transparent 75%)}
+.apply-bg{position:absolute;inset:0;pointer-events:none;opacity:.26}
+.apply-bg img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:60% 60%;-webkit-mask-image:linear-gradient(to top,#000 0,rgba(0,0,0,.5) 45%,transparent 90%);mask-image:linear-gradient(to top,#000 0,rgba(0,0,0,.5) 45%,transparent 90%)}
 .apply .wrap{position:relative}
 .apply-steps{list-style:none;margin:0 auto;padding:0;max-width:520px;display:grid;gap:0}
 .apply-steps li{position:relative;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:center;padding:0 0 22px}
