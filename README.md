@@ -19,7 +19,7 @@ V1（2026-09-18の修正依頼前）は archive/v1/ と GitHub の v1 ブラン�
 クライアント確認用URL（GitHub Pages）：https://810eigo-droid.github.io/korekara/
 
 GitHub Pages は main ブランチ直下の index.html を表示します。
-そのため LP の HTML は次の2か所にあり、修正時は両方を同じ内容に更新します。
+そのため LP の HTML は次の2か所にあり、dist/index.html を直したら tools/sync-root.sh を実行して直下の index.html を再生成します。
 - index.html（リポジトリ直下）：GitHub Pages 用。CSS・JS・画像は dist/ 内のものを dist/ 付きパスで参照。
 - dist/index.html：Sites 用。CSS・JS・画像は同じ dist/ 内を相対パスで参照。
 CSS・JS・画像の実体は dist/ にひとつだけなので、そちらは1か所を直せば両方に反映されます。
