@@ -10,12 +10,26 @@ LP本体：dist/index.html
 アニメーション：dist/ambient.js、dist/reveal.js
 先頭へ戻るボタン：dist/top.js
 
-## 公開サイト
-https://korekara-counseling.ricky-o.chatgpt.site/
+## バージョン管理
+V1（2026-09-18の修正依頼前）は archive/v1/ と GitHub の v1 ブランチに保存しています。
+以後の修正は index.html と dist/ を上書きして進め、同じ公開URLで新しいLPを確認してもらいます。
+修正作業は claude/korekara-v2 ブランチで行い、確認後に main へ取り込みます。
 
-ユーザーの依頼により一般公開済み。GitHubの保存先変更で公開URLは変わりません。
-公開はSitesを使用し、既存の .openai/hosting.json の project_id を維持します。
-GitHubへ画像を追加しただけでは自動公開されません。HTMLへの組み込みとSitesへの公開が必要です。
+## 公開サイト
+クライアント確認用URL（GitHub Pages）：https://810eigo-droid.github.io/korekara/
+
+GitHub Pages は main ブランチ直下の index.html を表示します。
+そのため LP の HTML は次の2か所にあり、dist/index.html を直したら tools/sync-root.sh を実行して直下の index.html を再生成します。
+- index.html（リポジトリ直下）：GitHub Pages 用。CSS・JS・画像は dist/ 内のものを dist/ 付きパスで参照。
+- dist/index.html：Sites 用。CSS・JS・画像は同じ dist/ 内を相対パスで参照。
+CSS・JS・画像の実体は dist/ にひとつだけなので、そちらは1か所を直せば両方に反映されます。
+
+main に push すれば GitHub Pages は自動で更新されます（反映まで数分）。
+作業ブランチに push しただけでは公開URLは変わりません。
+
+旧URL（Sites）：https://korekara-counseling.ricky-o.chatgpt.site/
+Sites は .openai/hosting.json の project_id を維持し、dist/ を公開します。
+Sites への反映は手動の公開操作が必要です。
 
 ## 申込み
 マイスピーのLP作成ブロックは使いません。申込み・リスト管理のみマイスピーを使用します。
@@ -23,7 +37,10 @@ GitHubへ画像を追加しただけでは自動公開されません。HTMLへ�
 料金カードの申込みボタンは受付準備中です。URL受領後にリンクを接続します。
 
 ## 原稿と画像
-設計書：DESIGN-FRAMEWORK.md
+設計書（V1）：DESIGN-FRAMEWORK.md
+設計書（V2・現行）：DESIGN-FRAMEWORK-V2.md
+正式原稿（2026-09-18受領）：docs/LP原稿-v2-2026-09-18.docx（原本）、同 .md（テキスト化）
+参考デザイン・支給写真原本：images/ref-pinterest-*.png、images/profile.jpg、images/color-bottles.png
 感想4件は架空の仮原稿で、各カードに SAMPLE／仮原稿を明記しています。
 プロフィール・正式原稿・申込み条件など、未確定箇所は確認後に更新します。
 ユーザー提供のPC/SP画像は640pxで切り替え、基本は画像全体を表示します。
