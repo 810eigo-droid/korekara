@@ -17,7 +17,7 @@
   document.querySelectorAll('h2').forEach((el, i) => targets.set(el, i % 2 ? 'right' : 'left'));
   document.querySelectorAll('h3').forEach(el => targets.set(el, 'rise'));
   document.querySelectorAll('.fade-photo,.tea-photo,.closing-photo').forEach((el, i) => targets.set(el, i % 2 ? 'right' : 'left'));
-  document.querySelectorAll('.avatar,.step-no,.apply-no,.initial,.bonus-icon').forEach(el => targets.set(el, 'pop'));
+  document.querySelectorAll('.avatar,.step-no,.apply-no,.voice-avatar,.bonus-icon,.benefit-art,.photo-strip img').forEach(el => targets.set(el, 'pop'));
   document.querySelectorAll('.benefit-cards article,.voice-card,.offer-card,.bonus,.cta-block').forEach(el => targets.set(el, 'rise'));
   const hero = document.querySelector('.hero-copy');
   if (hero) targets.set(hero, 'rise');
