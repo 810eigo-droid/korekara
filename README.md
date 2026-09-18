@@ -37,7 +37,10 @@ Sites への反映は手動の公開操作が必要です。
 料金カードの申込みボタンは受付準備中です。URL受領後にリンクを接続します。
 
 ## 原稿と画像
-設計書：DESIGN-FRAMEWORK.md
+設計書（V1）：DESIGN-FRAMEWORK.md
+設計書（V2・現行）：DESIGN-FRAMEWORK-V2.md
+正式原稿（2026-09-18受領）：docs/LP原稿-v2-2026-09-18.docx（原本）、同 .md（テキスト化）
+参考デザイン・支給写真原本：images/ref-pinterest-*.png、images/profile.jpg、images/color-bottles.png
 感想4件は架空の仮原稿で、各カードに SAMPLE／仮原稿を明記しています。
 プロフィール・正式原稿・申込み条件など、未確定箇所は確認後に更新します。
 ユーザー提供のPC/SP画像は640pxで切り替え、基本は画像全体を表示します。
