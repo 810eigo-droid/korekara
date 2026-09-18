@@ -13,7 +13,7 @@
     wipe: [{opacity: .2, clipPath: 'inset(0 12% 0 0 round 12px)'}, {opacity: 1, clipPath: 'inset(0 0 0 0 round 12px)'}]
   };
   const targets = new Map();
-  document.querySelectorAll('.key-marker').forEach(el => targets.set(el, 'marker'));
+  document.querySelectorAll('.key-marker,.lead-key').forEach(el => targets.set(el, 'marker'));
   document.querySelectorAll('h2').forEach((el, i) => targets.set(el, i % 2 ? 'right' : 'left'));
   document.querySelectorAll('h3').forEach(el => targets.set(el, 'rise'));
   document.querySelectorAll('.fade-photo,.tea-photo,.closing-photo').forEach((el, i) => targets.set(el, i % 2 ? 'right' : 'left'));
