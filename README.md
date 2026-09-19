@@ -15,6 +15,8 @@ V1（2026-09-18の修正依頼前）は archive/v1/ と GitHub の v1 ブラン�
 V3（2026-09-19の修正依頼5点を反映、アニメーションあり）は archive/v3/ と v3 ブランチに保存しています。
 動きあり版の確認URL：https://810eigo-droid.github.io/korekara/archive/v3/
 公開中の dist/ は V3 からアニメーション（reveal.js・ambient.js・泡の浮遊・マーカーの動き）を外した静止版です。
+FV は文字込みの1枚画像（images/fv3-pc.webp 1672×941、images/fv3-sp.webp 1015×1550、GPT生成）を使用し、
+画像内のボタンと特典バッジの位置に透明リンク（.fv-link）を重ねています。FV の文言を変える場合は画像の再生成が必要です。
 メニュー開閉（menu.js）と先頭へ戻る（top.js）は機能として残しています。
 以後の修正は index.html と dist/ を上書きして進め、同じ公開URLで新しいLPを確認してもらいます。
 修正作業は claude/korekara-v2 ブランチで行い、確認後に main へ取り込みます。
