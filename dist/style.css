@@ -100,7 +100,16 @@ html[data-motion=paused] *{transition:none!important}
 .fade-photo{margin:0;line-height:0}
 .fade-photo img{width:100%;height:auto;display:block;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 84%,transparent 100%),linear-gradient(to right,transparent 0,#000 10%,#000 90%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 84%,transparent 100%),linear-gradient(to right,transparent 0,#000 10%,#000 90%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
 
-/* ファーストビュー（水彩の背景＋アーチ型写真＋リボン） */
+/* ファーストビュー：文字込みの1枚画像（fv3）。ボタンと特典バッジの位置に透明リンクを重ねる */
+.hero-image{display:block;padding:0;background:#FBEFEA}
+.fv-frame{position:relative;max-width:1440px;margin:0 auto;line-height:0}
+.fv-frame h1{margin:0;font-size:inherit;line-height:0}
+.fv-frame img{display:block;width:100%;height:auto}
+.fv-link{position:absolute;display:block;border-radius:999px}
+.fv-link:focus-visible{outline:3px solid var(--coral-d);outline-offset:2px}
+.fv-link-apply{left:8.3%;top:79.6%;width:83.5%;height:8.9%}
+.fv-link-bonus{left:7.5%;top:90.3%;width:79%;height:4.3%}
+/* 旧 FV（HTML 組み）のスタイル。archive/v3 と同じ構成に戻すときに使う */
 .hero{position:relative;overflow:hidden;display:grid;grid-template-columns:100%;padding:0 0 44px;background:linear-gradient(180deg,#FBEFEA 0%,var(--paper) 58%,#FBEFEA 100%)}
 .hero-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .wc{position:absolute;border-radius:50%;filter:blur(38px);opacity:.75;mix-blend-mode:multiply}
@@ -323,6 +332,8 @@ h3{font-size:22px}
 .topbar-brand{font-size:14px}
 
 .hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto 1fr;align-items:center;min-height:660px;padding:0;background:linear-gradient(90deg,var(--paper) 0 45%,#FBEFEA 100%)}
+.fv-link-apply{left:9.2%;top:79.4%;width:46.4%;height:8.7%}
+.fv-link-bonus{left:11.7%;top:90.2%;width:41.5%;height:5.1%}
 .hero-badge{grid-column:1;grid-row:1;text-align:left;margin:56px 0 0;padding:0 40px 0 max(44px,calc((100vw - 1120px)/2))}
 .hero-badge-inner{font-size:15px}
 .hero-photo{grid-column:2;grid-row:1/3;width:auto;height:100%;margin:0}
