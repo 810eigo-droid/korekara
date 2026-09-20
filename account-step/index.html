@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Cloudflare アカウント作成ガイド｜カズナカ様</title>
+<style>
+:root{--ink:#443b40;--muted:#71676c;--pink:#a43566;--line:#eadbe2;--soft:#fff5f8}
+*{box-sizing:border-box}body{margin:0;background:#fcfafb;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;font-size:17px;line-height:1.9}a{color:var(--pink);text-underline-offset:4px;overflow-wrap:anywhere}a:focus-visible,summary:focus-visible{outline:3px solid var(--pink);outline-offset:5px}
+main{max-width:850px;margin:auto;padding:40px 24px 72px}.eyebrow{color:var(--pink);font-size:13px;letter-spacing:.12em;font-weight:700}header{padding:20px 0 32px;border-bottom:1px solid var(--line)}h1{font-size:clamp(29px,5vw,43px);line-height:1.5;letter-spacing:.02em;margin:14px 0 20px}h2{font-size:24px;line-height:1.55;margin:0 0 18px}h3{font-size:18px;margin:0 0 8px}p{margin:12px 0}.lead{font-size:18px}.tag{display:inline-block;border:1px solid var(--line);background:white;border-radius:30px;padding:3px 15px;font-size:14px;margin:0 8px 8px 0}.box{padding:25px 28px;border-radius:18px;background:var(--soft);margin:28px 0}.box h2{font-size:21px}.roles{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}.role{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}.role b{color:var(--pink)}.role p{font-size:15px;margin-bottom:0}.steps{list-style:none;padding:0;margin:28px 0}.step{background:white;border:1px solid var(--line);border-radius:20px;padding:30px;margin:20px 0}.stephead{display:flex;gap:16px;align-items:flex-start}.number{flex:0 0 42px;height:42px;display:grid;place-items:center;border-radius:50%;background:var(--pink);color:white;font-size:19px;font-weight:bold}.stephead h2{padding-top:3px}.button{display:inline-block;background:var(--pink);color:white;border-radius:10px;padding:13px 22px;text-decoration:none;font-weight:bold;text-align:center;margin:12px 0}.button:hover{background:#83284f}.note{font-size:14px;color:var(--muted)}.fields{margin:18px 0;border-top:1px solid var(--line)}.fields div{padding:14px 0;border-bottom:1px solid var(--line)}dt{font-weight:bold}dd{margin:5px 0 0}.check{border-left:3px solid var(--pink);padding:10px 16px;background:var(--soft);margin-top:20px}.quote{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}.faq{margin:40px 0}details{border-bottom:1px solid var(--line);padding:17px 0}summary{font-weight:bold;cursor:pointer}details p{font-size:16px}footer{border-top:1px solid var(--line);padding-top:24px;color:var(--muted);font-size:13px}footer ul{padding-left:22px}.flow{font-weight:bold;color:var(--pink)}
+@media(max-width:560px){main{padding:22px 18px 48px}.step{padding:24px 19px}.box{padding:22px 20px}.roles{grid-template-columns:1fr}.stephead{gap:12px}h2{font-size:21px}.number{flex-basis:36px;height:36px}.button{display:block;font-size:16px}body{font-size:16px}}
+@media print{body{background:white}main{padding:0}.step{break-inside:avoid}.button{color:var(--pink);background:white;border:1px solid var(--pink)}details p{display:block}}
+</style>
+</head>
+<body><main>
+<header>
+<div class="eyebrow">カズナカ様へ · LP公開の準備</div>
+<h1>Cloudflare<br>アカウント作成ガイド</h1>
+<p class="lead">まずは、登録とメールの確認まで。<br>ひとつずつ進めていただければ大丈夫です。</p>
+<span class="tag">アカウント作成は無料</span><span class="tag">メールアドレスをご用意ください</span>
+</header>
+<section class="box" aria-labelledby="goal">
+<h2 id="goal">今回お願いしたいこと</h2>
+<p>Cloudflare（クラウドフレア）に、ご自身のアカウントを作成してください。<strong>メールアドレスの認証まで完了したら、制作担当者へご連絡ください。</strong></p>
+<p class="flow">アカウント登録 → メール認証 → 完了のご連絡</p>
+<p class="note">パソコンでこの手順書と登録画面を並べて開くと、確認しながら操作できます。すでにアカウントをお持ちの場合は、新規登録せず、ログインとメール認証の確認へお進みください。</p>
+</section>
+<section aria-labelledby="purpose">
+<h2 id="purpose">Cloudflareは、LPを公開する場所です</h2>
+<p>今回のLPはCloudflare Pagesで公開する予定です。スマホ・パソコンそれぞれに合わせたデザインを表示し、お申し込みボタンからMyASPのフォームへつなぎます。</p>
+<div class="roles"><div class="role"><b>Cloudflare Pages</b><p>LPの文章・画像を表示する場所。無料枠と「〜.pages.dev」のURLを使う予定です。</p></div><div class="role"><b>MyASP（マイスピー）</b><p>お申し込みの受付や、登録者・メール配信の管理に使います。</p></div></div>
+<p class="note">今回の構成では、WordPressや別のレンタルサーバーの契約は不要です。Cloudflareの有料機能や独自ドメインを希望される場合は、別途費用の確認が必要です。</p>
+</section>
+<ol class="steps">
+<li class="step"><div class="stephead"><span class="number">1</span><h2>登録ページを開く</h2></div>
+<p>下のボタンから、Cloudflareの公式登録ページを開いてください。別のタブで開くので、この手順書に戻りながら進められます。</p>
+<a class="button" href="https://dash.cloudflare.com/sign-up" target="_blank" rel="noopener noreferrer">Cloudflareの登録ページを開く ↗</a>
+<p class="note">公式URL：dash.cloudflare.com/sign-up<br>英語で表示されても、そのまま登録できます。画面の表記や配置は更新により変わることがあります。</p>
+</li>
+<li class="step"><div class="stephead"><span class="number">2</span><h2>メールアドレスと<br>パスワードを登録する</h2></div>
+<p>メールアドレスで登録する場合は、次の2項目を入力します。</p>
+<dl class="fields"><div><dt>Email ／ メールアドレス</dt><dd>普段確認でき、今後も使い続けるご自身のメールアドレスを入力してください。</dd></div><div><dt>Password ／ パスワード</dt><dd>画面に表示される条件を満たす、新しいパスワードを設定してください。ほかのサービスと同じものは避け、忘れないよう保管します。</dd></div></dl>
+<p>入力後、<strong>「Create Account（アカウントを作成）」</strong>を押します。本人確認のチェックなどが表示された場合は、画面の案内に沿って進めてください。</p>
+<div class="check">この手順書には入力欄はありません。メールアドレスやパスワードは、Cloudflareの公式画面で入力してください。</div>
+</li>
+<li class="step"><div class="stephead"><span class="number">3</span><h2>届いたメールから認証する</h2></div>
+<p>登録したメールアドレスの受信箱を開き、Cloudflareから届いた確認メールを探してください。</p>
+<p>メール内の<strong>認証リンク</strong>を押します。「Verify email address」など、メールアドレスの確認を意味する表記が目印です。ログインを求められたら、先ほど登録した情報でログインします。</p>
+<div class="check"><strong>完了の目安</strong><br>管理画面の「My Profile（マイプロフィール）」で、メールアドレスに「verified（認証済み）」と表示されていれば完了です。</div>
+<p class="note">メールが届かないときの対処法は、下の「困ったときは」をご覧ください。</p>
+</li>
+<li class="step"><div class="stephead"><span class="number">4</span><h2>制作担当者に完了を伝える</h2></div>
+<p>いつもの連絡方法で、以下のようにお知らせください。</p>
+<div class="quote">Cloudflareのアカウントを作成し、メールアドレスの認証まで完了しました。次の設定についてご案内をお願いします。</div>
+<p><strong>パスワードや認証コードを送る必要はありません。</strong>公開作業の進め方や、必要に応じた担当者の招待方法は、次のご案内で確認します。</p>
+</li>
+</ol>
+<section class="box">
+<h2>ここまでで、今回の準備は完了です</h2>
+<p>「ドメインを追加」「サイトを追加」「プランを選ぶ」などの画面が出ても、今回のアカウント作成では、その先の設定を進める必要はありません。</p>
+<p>LPのアップロード、公開URLの設定、お申し込みフォームへの接続は、制作担当者と確認しながら進めます。</p>
+</section>
+<section class="faq" aria-labelledby="faq">
+<h2 id="faq">困ったときは</h2>
+<details><summary>確認メールが見つかりません</summary><p>迷惑メールフォルダも確認し、「Cloudflare」でメールを検索してください。届いていなければ、Cloudflareにログインし、「My Profile」→「Email Address」→「Send verification email（確認メールを送信）」から再送できます。</p></details>
+<details><summary>認証リンクの有効期限が切れました</summary><p>「My Profile」から確認メールを再送し、新しく届いたメールのリンクを開いてください。すでにメールアドレスに「verified」と表示されている場合は、認証済みです。</p></details>
+<details><summary>ドメイン名や支払い情報を求められました</summary><p>今回お願いしているのは、アカウント作成とメール認証までです。ドメインの購入や有料プランの申し込みは進めず、表示されている画面を制作担当者へお知らせください。</p></details>
+<details><summary>手順と違う画面が表示されます</summary><p>画面の言語や更新時期により、ボタン名・配置が異なることがあります。迷った場合は、その画面のスクリーンショットを制作担当者へお送りください。パスワード・認証コードなどが写っていないことをご確認ください。</p></details>
+<details><summary>アカウントを作れば、LPはすぐ公開されますか？</summary><p>アカウント作成だけでは、LPはまだ公開されません。このあとLPのデータを登録し、表示とお申し込み先を確認して公開します。公開URLは設定後にご案内します。</p></details>
+</section>
+<footer>
+<p>作成・確認日：2026年9月20日<br>このページは、LP制作に伴うアカウント作成のご案内です。</p>
+<p>参考：Cloudflare公式情報</p>
+<ul><li><a href="https://developers.cloudflare.com/fundamentals/account/create-account/" target="_blank" rel="noopener noreferrer">アカウントの作成</a></li><li><a href="https://developers.cloudflare.com/fundamentals/user-profiles/verify-email-address/" target="_blank" rel="noopener noreferrer">メールアドレスの認証・再送</a></li><li><a href="https://www.cloudflare.com/products/pages/" target="_blank" rel="noopener noreferrer">Cloudflare Pages</a></li><li><a href="https://developers.cloudflare.com/pages/get-started/direct-upload/" target="_blank" rel="noopener noreferrer">LPのアップロードと公開URLについて</a></li></ul>
+</footer>
+</main></body></html>
