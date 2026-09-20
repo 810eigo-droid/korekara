@@ -452,3 +452,10 @@ h3{font-size:22px}
 .footer{padding:56px 22px 120px}
 .floating-apply a{font-size:14px}
 }
+
+/* Profile identity */
+.profile-brand{font-size:14px;letter-spacing:.06em;color:var(--rose);margin:20px 0 6px}
+.profile-name{font-family:var(--serif);font-size:28px;font-weight:500;line-height:1.5;letter-spacing:.06em;color:var(--rose);margin:0}
+.profile-name span{display:inline-block;font-size:18px;letter-spacing:.02em}
+.profile-card .profile-title{margin-top:10px;line-height:1.9;letter-spacing:.03em}
+.profile-title span{display:inline-block}
