@@ -4,26 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Cloudflare アカウント作成ガイド｜カズナカ様</title>
+<title>Cloudflare アカウント作成・担当者招待ガイド｜カズナカ様</title>
 <style>
 :root{--ink:#443b40;--muted:#71676c;--pink:#a43566;--line:#eadbe2;--soft:#fff5f8}
 *{box-sizing:border-box}body{margin:0;background:#fcfafb;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;font-size:17px;line-height:1.9}a{color:var(--pink);text-underline-offset:4px;overflow-wrap:anywhere}a:focus-visible,summary:focus-visible{outline:3px solid var(--pink);outline-offset:5px}
 main{max-width:850px;margin:auto;padding:40px 24px 72px}.eyebrow{color:var(--pink);font-size:13px;letter-spacing:.12em;font-weight:700}header{padding:20px 0 32px;border-bottom:1px solid var(--line)}h1{font-size:clamp(29px,5vw,43px);line-height:1.5;letter-spacing:.02em;margin:14px 0 20px}h2{font-size:24px;line-height:1.55;margin:0 0 18px}h3{font-size:18px;margin:0 0 8px}p{margin:12px 0}.lead{font-size:18px}.tag{display:inline-block;border:1px solid var(--line);background:white;border-radius:30px;padding:3px 15px;font-size:14px;margin:0 8px 8px 0}.box{padding:25px 28px;border-radius:18px;background:var(--soft);margin:28px 0}.box h2{font-size:21px}.roles{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}.role{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}.role b{color:var(--pink)}.role p{font-size:15px;margin-bottom:0}.steps{list-style:none;padding:0;margin:28px 0}.step{background:white;border:1px solid var(--line);border-radius:20px;padding:30px;margin:20px 0}.stephead{display:flex;gap:16px;align-items:flex-start}.number{flex:0 0 42px;height:42px;display:grid;place-items:center;border-radius:50%;background:var(--pink);color:white;font-size:19px;font-weight:bold}.stephead h2{padding-top:3px}.button{display:inline-block;background:var(--pink);color:white;border-radius:10px;padding:13px 22px;text-decoration:none;font-weight:bold;text-align:center;margin:12px 0}.button:hover{background:#83284f}.note{font-size:14px;color:var(--muted)}.fields{margin:18px 0;border-top:1px solid var(--line)}.fields div{padding:14px 0;border-bottom:1px solid var(--line)}dt{font-weight:bold}dd{margin:5px 0 0}.check{border-left:3px solid var(--pink);padding:10px 16px;background:var(--soft);margin-top:20px}.quote{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}.faq{margin:40px 0}details{border-bottom:1px solid var(--line);padding:17px 0}summary{font-weight:bold;cursor:pointer}details p{font-size:16px}footer{border-top:1px solid var(--line);padding-top:24px;color:var(--muted);font-size:13px}footer ul{padding-left:22px}.flow{font-weight:bold;color:var(--pink)}
 @media(max-width:560px){main{padding:22px 18px 48px}.step{padding:24px 19px}.box{padding:22px 20px}.roles{grid-template-columns:1fr}.stephead{gap:12px}h2{font-size:21px}.number{flex-basis:36px;height:36px}.button{display:block;font-size:16px}body{font-size:16px}}
-@media print{body{background:white}main{padding:0}.step{break-inside:avoid}.button{color:var(--pink);background:white;border:1px solid var(--pink)}details p{display:block}}
+@media print{.print-button{display:none!important}body{background:white}main{padding:0}.step{break-inside:avoid}.button{color:var(--pink);background:white;border:1px solid var(--pink)}details p{display:block}}
 </style>
 </head>
 <body><main>
 <header>
 <div class="eyebrow">カズナカ様へ · LP公開の準備</div>
-<h1>Cloudflare<br>アカウント作成ガイド</h1>
-<p class="lead">まずは、登録とメールの確認まで。<br>ひとつずつ進めていただければ大丈夫です。</p>
+<h1>Cloudflare<br>アカウント作成・担当者招待ガイド</h1>
+<p class="lead">登録から、制作担当者の招待まで。<br>ひとつずつ進めていただければ大丈夫です。</p>
 <span class="tag">アカウント作成は無料</span><span class="tag">メールアドレスをご用意ください</span>
-</header>
+<button type="button" class="button print-button" onclick="window.print()" style="border:0;cursor:pointer;font:inherit">この手順書を印刷する</button><p class="note">A4・縦で印刷できます。「困ったときは」の回答もまとめて印刷されます。</p></header>
 <section class="box" aria-labelledby="goal">
 <h2 id="goal">今回お願いしたいこと</h2>
-<p>Cloudflare（クラウドフレア）に、ご自身のアカウントを作成してください。<strong>メールアドレスの認証まで完了したら、制作担当者へご連絡ください。</strong></p>
-<p class="flow">アカウント登録 → メール認証 → 完了のご連絡</p>
+<p>Cloudflare（クラウドフレア）に、ご自身のアカウントを作成してください。<strong>メール認証後、そのまま手順4・5へ進み、制作担当者を招待してください。途中で完了連絡をする必要はありません。</strong></p>
+<p class="flow">アカウント登録 → メール認証 → 担当者を招待 → 準備完了</p>
 <p class="note">パソコンでこの手順書と登録画面を並べて開くと、確認しながら操作できます。すでにアカウントをお持ちの場合は、新規登録せず、ログインとメール認証の確認へお進みください。</p>
 </section>
 <section aria-labelledby="purpose">
@@ -50,28 +50,46 @@ main{max-width:850px;margin:auto;padding:40px 24px 72px}.eyebrow{color:var(--pin
 <div class="check"><strong>完了の目安</strong><br>管理画面の「My Profile（マイプロフィール）」で、メールアドレスに「verified（認証済み）」と表示されていれば完了です。</div>
 <p class="note">メールが届かないときの対処法は、下の「困ったときは」をご覧ください。</p>
 </li>
-<li class="step"><div class="stephead"><span class="number">4</span><h2>制作担当者に完了を伝える</h2></div>
-<p>いつもの連絡方法で、以下のようにお知らせください。</p>
-<div class="quote">Cloudflareのアカウントを作成し、メールアドレスの認証まで完了しました。次の設定についてご案内をお願いします。</div>
-<p><strong>パスワードや認証コードを送る必要はありません。</strong>公開作業の進め方や、必要に応じた担当者の招待方法は、次のご案内で確認します。</p>
+<li class="step"><div class="stephead"><span class="number">4</span><h2>制作担当者を招待する</h2></div>
+<p>Cloudflareの管理画面で、今回LPに使用する<strong>ご自身のアカウント</strong>を選びます。「Manage Account（アカウント管理）」→「Members（メンバー）」を開き、「Invite（招待）」を押してください。</p>
+<p>招待画面には、次のように設定します。</p>
+<dl class="fields">
+<div><dt>Invite members ／ 招待するメールアドレス</dt><dd><strong style="font-size:22px;overflow-wrap:anywhere">810eigo@gmail.com</strong><br>制作担当者（リッキー）の招待先です。ご自身のメールアドレスではなく、上記を入力します。</dd></div>
+<div><dt>Scope ／ 対象範囲</dt><dd>今回LPを公開する<strong>ご自身のアカウント全体</strong>を対象にします。ドメイン単位ではなく、アカウントを対象に選択してください。</dd></div>
+<div><dt>Roles ／ 権限</dt><dd><strong>Workers Platform Admin</strong> を選択します。検索欄があれば「Workers」と入力すると探しやすくなります。</dd></div>
+</dl>
+<p class="note">この権限で、担当者はPagesを含む開発用サービスの閲覧・編集ができます。LPだけに限定された権限ではありません。「Workers Editor」や「Read-only」は選ばず、上記の名称をご確認ください。Super Administrator（最高管理者）の権限は不要です。</p>
+<p>「<strong>Continue to summary（確認画面へ）</strong>」を押し、メールアドレス・対象アカウント・権限を確認して、最後に「<strong>Invite（招待）</strong>」を押してください。</p>
+</li>
+<li class="step"><div class="stephead"><span class="number">5</span><h2>招待が送信されたことを確認する</h2></div>
+<p>「Members（メンバー）」の一覧に <strong>810eigo@gmail.com</strong> が表示されていることを確認してください。</p>
+<div class="check"><strong>「Invite Pending（招待承認待ち）」であれば、送信完了です。</strong><br>担当者が承認すると、参加済みの状態に変わります。承認されるまで画面を開いて待つ必要はありません。</div>
+<p>招待メールはCloudflareから担当者へ届くため、<strong>通常は別途の完了連絡は不要です。</strong>担当者が招待を承認し、納品済みのLPデータを使って公開設定を進めます。</p>
+<p><strong>パスワード・認証コード・APIキーの共有は不要です。</strong></p>
 </li>
 </ol>
 <section class="box">
 <h2>ここまでで、今回の準備は完了です</h2>
 <p>「ドメインを追加」「サイトを追加」「プランを選ぶ」などの画面が出ても、今回のアカウント作成では、その先の設定を進める必要はありません。</p>
-<p>LPのアップロード、公開URLの設定、お申し込みフォームへの接続は、制作担当者と確認しながら進めます。</p>
+<p>招待送信まで終われば、カズナカ様にお願いする準備は完了です。LPのアップロード・表示確認・お申し込みフォームへの接続は制作担当者が行い、公開後にURLをお知らせします。</p>
 </section>
 <section class="faq" aria-labelledby="faq">
 <h2 id="faq">困ったときは</h2>
 <details><summary>確認メールが見つかりません</summary><p>迷惑メールフォルダも確認し、「Cloudflare」でメールを検索してください。届いていなければ、Cloudflareにログインし、「My Profile」→「Email Address」→「Send verification email（確認メールを送信）」から再送できます。</p></details>
 <details><summary>認証リンクの有効期限が切れました</summary><p>「My Profile」から確認メールを再送し、新しく届いたメールのリンクを開いてください。すでにメールアドレスに「verified」と表示されている場合は、認証済みです。</p></details>
-<details><summary>ドメイン名や支払い情報を求められました</summary><p>今回お願いしているのは、アカウント作成とメール認証までです。ドメインの購入や有料プランの申し込みは進めず、表示されている画面を制作担当者へお知らせください。</p></details>
+<details><summary>ドメイン名や支払い情報を求められました</summary><p>今回お願いしているのは、アカウント作成・メール認証・担当者の招待までです。ドメインの購入や有料プランの申し込みは進めず、表示されている画面を制作担当者へお知らせください。</p></details>
+<details><summary>「Members」が見つからない・招待できません</summary><p>ドメイン個別の画面ではなく、アカウントの管理画面に戻り、「Manage Account」→「Members」を確認してください。ご自身で作成したアカウントの管理者としてログインし、手順3のメール認証が完了していることも確認します。</p></details>
+<details><summary>招待メールの再送が必要になりました</summary><p>「Members」で「Invite Pending」の担当者を選び、「Resend invite（招待を再送）」を押します。承認待ちと表示されているだけなら、すぐに再送する必要はありません。</p></details>
 <details><summary>手順と違う画面が表示されます</summary><p>画面の言語や更新時期により、ボタン名・配置が異なることがあります。迷った場合は、その画面のスクリーンショットを制作担当者へお送りください。パスワード・認証コードなどが写っていないことをご確認ください。</p></details>
-<details><summary>アカウントを作れば、LPはすぐ公開されますか？</summary><p>アカウント作成だけでは、LPはまだ公開されません。このあとLPのデータを登録し、表示とお申し込み先を確認して公開します。公開URLは設定後にご案内します。</p></details>
+<details><summary>アカウントを作れば、LPはすぐ公開されますか？</summary><p>アカウント作成だけでは、LPはまだ公開されません。担当者の招待まで完了後、制作担当者がLPのデータを登録し、表示とお申し込み先を確認して公開します。公開URLは設定後にご案内します。</p></details>
 </section>
 <footer>
 <p>作成・確認日：2026年9月20日<br>このページは、LP制作に伴うアカウント作成のご案内です。</p>
 <p>参考：Cloudflare公式情報</p>
-<ul><li><a href="https://developers.cloudflare.com/fundamentals/account/create-account/" target="_blank" rel="noopener noreferrer">アカウントの作成</a></li><li><a href="https://developers.cloudflare.com/fundamentals/user-profiles/verify-email-address/" target="_blank" rel="noopener noreferrer">メールアドレスの認証・再送</a></li><li><a href="https://www.cloudflare.com/products/pages/" target="_blank" rel="noopener noreferrer">Cloudflare Pages</a></li><li><a href="https://developers.cloudflare.com/pages/get-started/direct-upload/" target="_blank" rel="noopener noreferrer">LPのアップロードと公開URLについて</a></li></ul>
+<ul><li><a href="https://developers.cloudflare.com/fundamentals/manage-members/manage/" target="_blank" rel="noopener noreferrer">メンバーの招待・招待の再送</a></li><li><a href="https://developers.cloudflare.com/fundamentals/manage-members/roles/" target="_blank" rel="noopener noreferrer">権限（Workers Platform Admin）について</a></li><li><a href="https://developers.cloudflare.com/fundamentals/account/create-account/" target="_blank" rel="noopener noreferrer">アカウントの作成</a></li><li><a href="https://developers.cloudflare.com/fundamentals/user-profiles/verify-email-address/" target="_blank" rel="noopener noreferrer">メールアドレスの認証・再送</a></li><li><a href="https://www.cloudflare.com/products/pages/" target="_blank" rel="noopener noreferrer">Cloudflare Pages</a></li><li><a href="https://developers.cloudflare.com/pages/get-started/direct-upload/" target="_blank" rel="noopener noreferrer">LPのアップロードと公開URLについて</a></li></ul>
 </footer>
-</main></body></html>
+</main><script>
+let closedDetails=[];
+window.addEventListener('beforeprint',()=>{closedDetails=[...document.querySelectorAll('details:not([open])')];closedDetails.forEach(el=>el.open=true)});
+window.addEventListener('afterprint',()=>{closedDetails.forEach(el=>el.open=false);closedDetails=[]});
+</script></body></html>
